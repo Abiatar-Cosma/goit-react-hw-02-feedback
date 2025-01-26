@@ -36,7 +36,7 @@ class App extends Component {
 
     return (
       <div className={styles['app-container']}>
-        <h1>Feedback Widget</h1>
+        <h1>Please leave feedback 😊</h1>
         <FeedbackOptions
           options={['good', 'neutral', 'bad']}
           onLeaveFeedback={this.handleLeaveFeedback}
@@ -50,7 +50,7 @@ class App extends Component {
             positivePercentage={positivePercentage}
           />
         ) : (
-          <Notification message="There is no feedback yet" />
+          <Notification message="There is no feedback yet..." />
         )}
       </div>
     );
